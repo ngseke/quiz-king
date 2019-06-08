@@ -78,10 +78,10 @@
             </objects>
             <point key="canvasLocation" x="-460" y="89"/>
         </scene>
-        <!--View Controller-->
+        <!--GameVC-->
         <scene sceneID="i18-fh-r3Q">
             <objects>
-                <viewController id="ieM-ep-oJb" sceneMemberID="viewController">
+                <viewController id="ieM-ep-oJb" customClass="GameVC" customModule="QuizKing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8EQ-pJ-8Zf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,7 +108,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8a-S4-mu7">
-                                        <rect key="frame" x="164.5" y="207.5" width="26" height="33.5"/>
+                                        <rect key="frame" x="164.5" y="207.5" width="26" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -116,31 +116,31 @@
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score : 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gih-TG-LFq">
-                                        <rect key="frame" x="131.5" y="261" width="92" height="33.5"/>
+                                        <rect key="frame" x="131.5" y="275.5" width="92" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="v3u-bU-B15">
-                                        <rect key="frame" x="0.0" y="314.5" width="355" height="272.5"/>
+                                        <rect key="frame" x="0.0" y="343.5" width="355" height="243.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g07-9m-R5t">
-                                                <rect key="frame" x="0.0" y="0.0" width="355" height="60.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="53.5"/>
                                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="option1"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1D-Mf-rQm">
-                                                <rect key="frame" x="0.0" y="70.5" width="355" height="61"/>
+                                                <rect key="frame" x="0.0" y="63.5" width="355" height="53"/>
                                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="option2"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swL-me-2mc">
-                                                <rect key="frame" x="0.0" y="141.5" width="355" height="60.5"/>
+                                                <rect key="frame" x="0.0" y="126.5" width="355" height="53.5"/>
                                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="option3"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9M4-l0-umH">
-                                                <rect key="frame" x="0.0" y="212" width="355" height="60.5"/>
+                                                <rect key="frame" x="0.0" y="190" width="355" height="53.5"/>
                                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="option4"/>
                                             </button>
@@ -168,16 +168,16 @@
             </objects>
             <point key="canvasLocation" x="-460" y="799"/>
         </scene>
-        <!--View Controller-->
+        <!--Game OverVC-->
         <scene sceneID="asV-s1-7bB">
             <objects>
-                <viewController id="cLS-SU-XmY" sceneMemberID="viewController">
+                <viewController id="cLS-SU-XmY" customClass="GameOverVC" customModule="QuizKing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2rA-sY-4m3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZrV-my-BBk">
-                                <rect key="frame" x="10" y="50" width="355" height="607"/>
+                                <rect key="frame" x="10" y="20" width="355" height="637"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score 100" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Mx-tJ-22d" userLabel="Score 100">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="300"/>
@@ -189,7 +189,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yW9-L1-cMx">
-                                        <rect key="frame" x="117" y="327" width="121.5" height="78"/>
+                                        <rect key="frame" x="117" y="342" width="121.5" height="78"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EARNED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lkm-SU-zmv">
                                                 <rect key="frame" x="0.0" y="0.0" width="121.5" height="38.5"/>
@@ -208,7 +208,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTd-W6-TYw">
-                                        <rect key="frame" x="125.5" y="556" width="104" height="51"/>
+                                        <rect key="frame" x="125.5" y="586" width="104" height="51"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <state key="normal" title="⌂Home"/>
                                         <connections>
@@ -225,9 +225,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ZrV-my-BBk" firstAttribute="leading" secondItem="Tp2-Le-NwW" secondAttribute="leading" constant="10" id="10E-Yw-fU8"/>
-                            <constraint firstItem="ZrV-my-BBk" firstAttribute="top" secondItem="2rA-sY-4m3" secondAttribute="top" constant="50" id="G1B-mv-iDE"/>
-                            <constraint firstItem="ZrV-my-BBk" firstAttribute="centerX" secondItem="2rA-sY-4m3" secondAttribute="centerX" id="PID-WO-Tge"/>
-                            <constraint firstItem="ZrV-my-BBk" firstAttribute="centerY" secondItem="2rA-sY-4m3" secondAttribute="centerY" id="a2e-fi-Zad"/>
+                            <constraint firstItem="ZrV-my-BBk" firstAttribute="top" secondItem="2rA-sY-4m3" secondAttribute="top" constant="20" symbolic="YES" id="G1B-mv-iDE"/>
                             <constraint firstAttribute="bottom" secondItem="ZrV-my-BBk" secondAttribute="bottom" constant="10" id="nrw-su-x2c"/>
                             <constraint firstItem="Tp2-Le-NwW" firstAttribute="trailing" secondItem="ZrV-my-BBk" secondAttribute="trailing" constant="10" id="p7T-g7-1d3"/>
                         </constraints>
@@ -238,7 +236,7 @@
             </objects>
             <point key="canvasLocation" x="632.79999999999995" y="799.2503748125938"/>
         </scene>
-        <!--Select LevelVC-->
+        <!--Select Level-->
         <scene sceneID="bWA-ES-Mpg">
             <objects>
                 <viewController id="O99-9A-oHh" customClass="SelectLevelVC" customModule="QuizKing" customModuleProvider="target" sceneMemberID="viewController">
@@ -248,7 +246,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="YGC-zd-CCR"/>
                     </view>
-                    <navigationItem key="navigationItem" id="iGT-7E-k3f">
+                    <navigationItem key="navigationItem" title="Select Level" id="iGT-7E-k3f">
                         <barButtonItem key="leftBarButtonItem" title="Title" id="ZyW-uO-E2T">
                             <connections>
                                 <action selector="toTitle:" destination="O99-9A-oHh" id="3cF-nQ-89X"/>
@@ -260,29 +258,32 @@
             </objects>
             <point key="canvasLocation" x="1572" y="91"/>
         </scene>
-        <!--View Controller-->
+        <!--LoadingVC-->
         <scene sceneID="RsV-iz-FeC">
             <objects>
-                <viewController id="tO3-Zq-JIF" sceneMemberID="viewController">
+                <viewController id="tO3-Zq-JIF" customClass="LoadingVC" customModule="QuizKing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0id-Fn-eHp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWG-I8-ajf">
-                                <rect key="frame" x="119" y="389" width="137" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWG-I8-ajf">
+                                <rect key="frame" x="152" y="334" width="71" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rWG-I8-ajf" firstAttribute="centerY" secondItem="1UK-Gm-Uwq" secondAttribute="centerY" id="AfO-lD-lwV"/>
+                            <constraint firstItem="rWG-I8-ajf" firstAttribute="centerX" secondItem="1UK-Gm-Uwq" secondAttribute="centerX" id="xhg-oU-Pvs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1UK-Gm-Uwq"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6L-po-wTV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3039.1999999999998" y="91.304347826086968"/>
+            <point key="canvasLocation" x="2484" y="89"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oJY-uK-Q4o">
@@ -293,6 +294,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YYU-Jz-NIS">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.98159819841384888" green="0.99201983213424683" blue="0.0019783182069659233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -304,4 +306,5 @@
             <point key="canvasLocation" x="633" y="91"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
 </document>

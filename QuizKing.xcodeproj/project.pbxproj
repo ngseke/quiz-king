@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1421909722AB9A3C00B38DD4 /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1421909622AB9A3C00B38DD4 /* LoadingVC.swift */; };
+		1421909922AB9C3400B38DD4 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1421909822AB9C3400B38DD4 /* GameVC.swift */; };
+		1421909B22AB9C9100B38DD4 /* GameOverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1421909A22AB9C9100B38DD4 /* GameOverVC.swift */; };
 		1423225022A7B3D000D3B8AE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1423224F22A7B3D000D3B8AE /* Question.swift */; };
 		1496B61222AA57EC00D18CA5 /* SelectLevelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1496B61122AA57EC00D18CA5 /* SelectLevelVC.swift */; };
 		3FF29C422297BA0C00A9907D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF29C412297BA0C00A9907D /* AppDelegate.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1421909622AB9A3C00B38DD4 /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
+		1421909822AB9C3400B38DD4 /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		1421909A22AB9C9100B38DD4 /* GameOverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverVC.swift; sourceTree = "<group>"; };
 		1423224F22A7B3D000D3B8AE /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		1496B61122AA57EC00D18CA5 /* SelectLevelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLevelVC.swift; sourceTree = "<group>"; };
 		3FF29C3E2297BA0C00A9907D /* QuizKing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizKing.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,13 +65,16 @@
 			isa = PBXGroup;
 			children = (
 				3FF29C412297BA0C00A9907D /* AppDelegate.swift */,
+				1421909A22AB9C9100B38DD4 /* GameOverVC.swift */,
 				3FF29C432297BA0C00A9907D /* TitleVC.swift */,
+				1421909822AB9C3400B38DD4 /* GameVC.swift */,
 				3FF29C452297BA0C00A9907D /* Main.storyboard */,
 				1496B61122AA57EC00D18CA5 /* SelectLevelVC.swift */,
 				3FF29C482297BA0C00A9907D /* Assets.xcassets */,
 				3FF29C4A2297BA0C00A9907D /* LaunchScreen.storyboard */,
 				3FF29C4D2297BA0C00A9907D /* Info.plist */,
 				1423224F22A7B3D000D3B8AE /* Question.swift */,
+				1421909622AB9A3C00B38DD4 /* LoadingVC.swift */,
 			);
 			path = QuizKing;
 			sourceTree = "<group>";
@@ -142,10 +151,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1421909B22AB9C9100B38DD4 /* GameOverVC.swift in Sources */,
 				1423225022A7B3D000D3B8AE /* Question.swift in Sources */,
 				3FF29C442297BA0C00A9907D /* TitleVC.swift in Sources */,
 				3FF29C422297BA0C00A9907D /* AppDelegate.swift in Sources */,
 				1496B61222AA57EC00D18CA5 /* SelectLevelVC.swift in Sources */,
+				1421909922AB9C3400B38DD4 /* GameVC.swift in Sources */,
+				1421909722AB9A3C00B38DD4 /* LoadingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
