@@ -11,6 +11,7 @@
 		1421909922AB9C3400B38DD4 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1421909822AB9C3400B38DD4 /* GameVC.swift */; };
 		1421909B22AB9C9100B38DD4 /* GameOverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1421909A22AB9C9100B38DD4 /* GameOverVC.swift */; };
 		1423225022A7B3D000D3B8AE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1423224F22A7B3D000D3B8AE /* Question.swift */; };
+		148A683B22AD0FE5000A6F51 /* EdgeInsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148A683A22AD0FE5000A6F51 /* EdgeInsetLabel.swift */; };
 		1496B61222AA57EC00D18CA5 /* SelectLevelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1496B61122AA57EC00D18CA5 /* SelectLevelVC.swift */; };
 		3FF29C422297BA0C00A9907D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF29C412297BA0C00A9907D /* AppDelegate.swift */; };
 		3FF29C442297BA0C00A9907D /* TitleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF29C432297BA0C00A9907D /* TitleVC.swift */; };
@@ -24,6 +25,7 @@
 		1421909822AB9C3400B38DD4 /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		1421909A22AB9C9100B38DD4 /* GameOverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverVC.swift; sourceTree = "<group>"; };
 		1423224F22A7B3D000D3B8AE /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		148A683A22AD0FE5000A6F51 /* EdgeInsetLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeInsetLabel.swift; sourceTree = "<group>"; };
 		1496B61122AA57EC00D18CA5 /* SelectLevelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLevelVC.swift; sourceTree = "<group>"; };
 		3FF29C3E2297BA0C00A9907D /* QuizKing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizKing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF29C412297BA0C00A9907D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				3FF29C4D2297BA0C00A9907D /* Info.plist */,
 				1423224F22A7B3D000D3B8AE /* Question.swift */,
 				1421909622AB9A3C00B38DD4 /* LoadingVC.swift */,
+				148A683A22AD0FE5000A6F51 /* EdgeInsetLabel.swift */,
 			);
 			path = QuizKing;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				1496B61222AA57EC00D18CA5 /* SelectLevelVC.swift in Sources */,
 				1421909922AB9C3400B38DD4 /* GameVC.swift in Sources */,
 				1421909722AB9A3C00B38DD4 /* LoadingVC.swift in Sources */,
+				148A683B22AD0FE5000A6F51 /* EdgeInsetLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

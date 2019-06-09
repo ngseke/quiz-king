@@ -2,14 +2,17 @@ import Foundation
 import UIKit
 
 class GameVC: UIViewController {
-    @IBOutlet weak var secondsLabel: UILabel!
+    
+    @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var optionButton1: UIButton!
     @IBOutlet weak var optionButton2: UIButton!
     @IBOutlet weak var optionButton3: UIButton!
     @IBOutlet weak var optionButton4: UIButton!
+    @IBOutlet weak var secondsLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
     
-    let defaultSeconds = 5  // 預設秒數
+    let defaultSeconds = 10  // 預設秒數
     
     var timer: Timer?
     var seconds = 0
@@ -19,6 +22,8 @@ class GameVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        secondsLabel.layer.cornerRadius = secondsLabel.frame.width / 2
+        
         resetTimer()
         setView()
     }
@@ -42,8 +47,7 @@ class GameVC: UIViewController {
     @objc func timerTick () {
         seconds -= 1
         secondsLabel.text = String(seconds)
-    
-    
+        
         // 若時間到
         if (seconds < 0) {
             resetTimer()
@@ -53,16 +57,54 @@ class GameVC: UIViewController {
     
     
     func goToNextQuestion () {
-        if (currentQuestionIndex < questions.count) {
+        if (currentQuestionIndex < questions.count - 1) {
             // 跳至下一題
             currentQuestionIndex += 1
             setView()
+            print("🍿 這題的正解是:" + questions[currentQuestionIndex].correctAnswer)
         } else {
             // 遊戲結束
+            clearTimer()
         }
     }
     
+    func giveAnswer (question: Question, selectionOfUser: UIButton) {
+        if let text = selectionOfUser.titleLabel?.text {
+            if (question.giveAnswer(answerOfUser: text)) {
+                // 答對
+                addScore()
+            } else {
+                // 答錯
+            }
+        }
+        goToNextQuestion()
+        resetTimer()
+    }
+    
+    // 加分
+    func addScore () {
+        self.score += (self.seconds * 10)
+        self.scoreLabel.text = String(self.score)
+    }
+    
+    @IBAction func clickOptionButton1(_ sender: Any) {
+        giveAnswer(question: questions[currentQuestionIndex], selectionOfUser: sender as! UIButton)
+    }
+    
+    @IBAction func clickOptionButton2(_ sender: Any) {
+        giveAnswer(question: questions[currentQuestionIndex], selectionOfUser: sender as! UIButton)
+    }
+    
+    @IBAction func clickOptionButton3(_ sender: Any) {
+        giveAnswer(question: questions[currentQuestionIndex], selectionOfUser: sender as! UIButton)
+    }
+    
+    @IBAction func clickOptionButton4(_ sender: Any) {
+        giveAnswer(question: questions[currentQuestionIndex], selectionOfUser: sender as! UIButton)
+    }
+    
     func setView () {
+        categoryLabel.text = questions[currentQuestionIndex].category
         questionLabel.text = questions[currentQuestionIndex].question
         optionButton1.setTitle(questions[currentQuestionIndex].selectionList[0], for: .normal)
         optionButton2.setTitle(questions[currentQuestionIndex].selectionList[1], for: .normal)

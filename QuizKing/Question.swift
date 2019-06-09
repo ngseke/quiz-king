@@ -39,8 +39,9 @@ class Question {
     }
     
     // 作答
-    func giveAnswer (answerOfUser: String) {
-        self.isCorrect = answerOfUser == self.correctAnswer
+    func giveAnswer (answerOfUser: String) -> Bool {
+        let result = answerOfUser == self.correctAnswer
+        self.isCorrect = result
+        return result
     }
-    
 }
