@@ -289,11 +289,11 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTd-W6-TYw">
-                                        <rect key="frame" x="110.5" y="399" width="134" height="54"/>
+                                        <rect key="frame" x="120" y="399" width="115" height="54"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
-                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="5" maxY="10"/>
-                                        <state key="normal" title="⌂ Home">
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="9" maxY="10"/>
+                                        <state key="normal" title="⌂ Title">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>

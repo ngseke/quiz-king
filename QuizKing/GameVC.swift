@@ -12,7 +12,7 @@ class GameVC: UIViewController {
     @IBOutlet weak var secondsLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     
-    let defaultSeconds = 1  // 預設秒數
+    let defaultSeconds = 10     // 預設秒數
     
     var timer: Timer?
     var seconds = 0
@@ -86,7 +86,7 @@ class GameVC: UIViewController {
     
     // 加分
     func addScore () {
-        self.score += (self.seconds * 10)
+        self.score += self.seconds
         self.scoreLabel.text = String(self.score)
     }
     
