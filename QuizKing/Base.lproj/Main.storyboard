@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tO3-Zq-JIF">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -163,10 +163,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6sv-0I-Lbh"/>
                     </view>
+                    <connections>
+                        <outlet property="optionButton1" destination="g07-9m-R5t" id="IwC-r3-QTe"/>
+                        <outlet property="optionButton2" destination="U1D-Mf-rQm" id="Dug-Bt-sTf"/>
+                        <outlet property="optionButton3" destination="swL-me-2mc" id="B3W-d2-aIu"/>
+                        <outlet property="optionButton4" destination="9M4-l0-umH" id="7g0-Vj-WAE"/>
+                        <outlet property="questionLabel" destination="vYb-mr-dJf" id="0kz-k2-NpJ"/>
+                        <outlet property="secondsLabel" destination="J8a-S4-mu7" id="lww-6h-YrB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bat-CH-5bc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-460" y="799"/>
+            <point key="canvasLocation" x="-460" y="1019"/>
         </scene>
         <!--Game OverVC-->
         <scene sceneID="asV-s1-7bB">
@@ -234,7 +242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YIZ-BW-7uy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="632.79999999999995" y="799.2503748125938"/>
+            <point key="canvasLocation" x="633" y="1020"/>
         </scene>
         <!--Select Level-->
         <scene sceneID="bWA-ES-Mpg">
@@ -317,6 +325,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1UK-Gm-Uwq"/>
                     </view>
+                    <connections>
+                        <segue destination="ieM-ep-oJb" kind="show" identifier="gameSegue" id="XeK-uR-gs1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6L-po-wTV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

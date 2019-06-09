@@ -3,6 +3,8 @@ import UIKit
 import WebKit
 
 class LoadingVC: UIViewController {
+    var questions = [Question]()
+    
     // 透過 API 載入題庫
     func loadGame (amount: Int, difficulty: String, done: @escaping ([Question]) -> ()) {
         let address = String(format: "https://opentdb.com/api.php?amount=%d&difficulty=%@&type=multiple", amount, difficulty)
@@ -45,9 +47,17 @@ class LoadingVC: UIViewController {
         super.viewDidLoad()
         loadGame (amount: 10, difficulty: "easy") { (questions: [Question]) -> () in
             print("題庫載入完成!")
-            questions.forEach({ (item) in
-                print(item.question)
-            })
+            self.questions = questions
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "gameSegue", sender: self)
+            }
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "gameSegue" {
+            let controller = segue.destination as? GameVC
+            controller?.questions = questions
         }
     }
     

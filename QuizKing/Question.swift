@@ -35,6 +35,7 @@ class Question {
         self.category = category
         //
         self.selectionList = [self.correctAnswer] + self.incorrectAnswers
+        self.selectionList.shuffle()
     }
     
     // 作答
