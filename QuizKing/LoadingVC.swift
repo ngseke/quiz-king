@@ -40,10 +40,11 @@ class LoadingVC: UIViewController {
         }
     }
 
-    
+    var difficult = String()
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadGame (amount: 10, difficulty: "easy") { (questions: [Question]) -> () in
+        print(difficult)
+        loadGame (amount: 10, difficulty: difficult) { (questions: [Question]) -> () in
             print("題庫載入完成!")
             questions.forEach({ (item) in
                 print(item.question)

@@ -12,6 +12,7 @@
 		1421909B22AB9C9100B38DD4 /* GameOverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1421909A22AB9C9100B38DD4 /* GameOverVC.swift */; };
 		1423225022A7B3D000D3B8AE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1423224F22A7B3D000D3B8AE /* Question.swift */; };
 		1496B61222AA57EC00D18CA5 /* SelectLevelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1496B61122AA57EC00D18CA5 /* SelectLevelVC.swift */; };
+		3DEF269D22AD06C3009600AB /* DifficultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEF269C22AD06C3009600AB /* DifficultTableViewCell.swift */; };
 		3FF29C422297BA0C00A9907D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF29C412297BA0C00A9907D /* AppDelegate.swift */; };
 		3FF29C442297BA0C00A9907D /* TitleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF29C432297BA0C00A9907D /* TitleVC.swift */; };
 		3FF29C472297BA0C00A9907D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF29C452297BA0C00A9907D /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		1421909A22AB9C9100B38DD4 /* GameOverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverVC.swift; sourceTree = "<group>"; };
 		1423224F22A7B3D000D3B8AE /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		1496B61122AA57EC00D18CA5 /* SelectLevelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLevelVC.swift; sourceTree = "<group>"; };
+		3DEF269C22AD06C3009600AB /* DifficultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultTableViewCell.swift; sourceTree = "<group>"; };
 		3FF29C3E2297BA0C00A9907D /* QuizKing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizKing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF29C412297BA0C00A9907D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FF29C432297BA0C00A9907D /* TitleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleVC.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				3FF29C4D2297BA0C00A9907D /* Info.plist */,
 				1423224F22A7B3D000D3B8AE /* Question.swift */,
 				1421909622AB9A3C00B38DD4 /* LoadingVC.swift */,
+				3DEF269C22AD06C3009600AB /* DifficultTableViewCell.swift */,
 			);
 			path = QuizKing;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				1423225022A7B3D000D3B8AE /* Question.swift in Sources */,
 				3FF29C442297BA0C00A9907D /* TitleVC.swift in Sources */,
 				3FF29C422297BA0C00A9907D /* AppDelegate.swift in Sources */,
+				3DEF269D22AD06C3009600AB /* DifficultTableViewCell.swift in Sources */,
 				1496B61222AA57EC00D18CA5 /* SelectLevelVC.swift in Sources */,
 				1421909922AB9C3400B38DD4 /* GameVC.swift in Sources */,
 				1421909722AB9A3C00B38DD4 /* LoadingVC.swift in Sources */,
@@ -295,6 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68HFSUKH96;
 				INFOPLIST_FILE = QuizKing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SmallMO.QuizKing;
@@ -309,6 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68HFSUKH96;
 				INFOPLIST_FILE = QuizKing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SmallMO.QuizKing;
