@@ -54,14 +54,12 @@ class LoadingVC: UIViewController {
         }
     }
     
+    // 切換segue時呼叫
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "gameSegue" {
             let controller = segue.destination as? GameVC
             controller?.questions = questions
         }
     }
-    
-
-
 }
 

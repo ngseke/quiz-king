@@ -12,7 +12,7 @@ class GameVC: UIViewController {
     @IBOutlet weak var secondsLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     
-    let defaultSeconds = 10  // 預設秒數
+    let defaultSeconds = 1  // 預設秒數
     
     var timer: Timer?
     var seconds = 0
@@ -65,6 +65,9 @@ class GameVC: UIViewController {
         } else {
             // 遊戲結束
             clearTimer()
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "gameOverSegue", sender: self)
+            }
         }
     }
     
@@ -116,4 +119,8 @@ class GameVC: UIViewController {
         clearTimer()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let controller = segue.destination as? GameOverVC
+        controller?.score = score
+    }
 }
