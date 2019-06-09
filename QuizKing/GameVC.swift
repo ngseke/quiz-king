@@ -19,6 +19,7 @@ class GameVC: UIViewController {
     var questions = [Question]()
     var currentQuestionIndex: Int = 0
     var score = 0
+    var difficulty = "easy"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -122,5 +123,6 @@ class GameVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let controller = segue.destination as? GameOverVC
         controller?.score = score
+        controller?.difficulty = difficulty
     }
 }

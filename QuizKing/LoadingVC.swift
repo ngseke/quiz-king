@@ -4,6 +4,7 @@ import WebKit
 
 class LoadingVC: UIViewController {
     var questions = [Question]()
+    var difficulty = String()
     
     // 透過 API 載入題庫
     func loadGame (amount: Int, difficulty: String, done: @escaping ([Question]) -> ()) {
@@ -45,7 +46,8 @@ class LoadingVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadGame (amount: 10, difficulty: "easy") { (questions: [Question]) -> () in
+        print(difficulty)
+        loadGame (amount: 10, difficulty: difficulty) { (questions: [Question]) -> () in
             print("題庫載入完成!")
             self.questions = questions
             DispatchQueue.main.async {
@@ -59,6 +61,7 @@ class LoadingVC: UIViewController {
         if segue.identifier == "gameSegue" {
             let controller = segue.destination as? GameVC
             controller?.questions = questions
+            controller?.difficulty = difficulty
         }
     }
 }

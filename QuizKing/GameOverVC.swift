@@ -8,11 +8,12 @@ class GameOverVC: UIViewController {
     
     var score = 0
     var coin = 0
+    var difficulty = "easy"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         scoreLabel.text = String(score)
-        setCoin(level: "easy")
+        setCoin(level: difficulty)
     }
     
     
