@@ -315,7 +315,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="goToTitle:" destination="cLS-SU-XmY" eventType="touchUpInside" id="7CE-ti-yhq"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" animates="NO" id="vmh-xd-9pq"/>
                                                 </connections>
                                             </button>
                                         </subviews>
