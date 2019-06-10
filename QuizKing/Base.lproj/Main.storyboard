@@ -53,6 +53,9 @@
                                                 <state key="normal" title="About">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="about:" destination="BYZ-38-t0r" eventType="touchUpInside" id="365-OJ-5Fn"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -259,7 +262,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yW9-L1-cMx">
-                                        <rect key="frame" x="117.5" y="213" width="120" height="96"/>
+                                        <rect key="frame" x="117.5" y="181" width="120" height="96"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EARNED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lkm-SU-zmv">
                                                 <rect key="frame" x="0.5" y="0.0" width="119" height="36"/>
@@ -288,18 +291,35 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTd-W6-TYw">
-                                        <rect key="frame" x="120" y="399" width="115" height="54"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
-                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="9" maxY="10"/>
-                                        <state key="normal" title="⌂ Title">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="BYZ-38-t0r" kind="presentation" animates="NO" id="VU0-sI-BJm"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="l1i-jb-2Bb">
+                                        <rect key="frame" x="96" y="335" width="163" height="118"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTd-W6-TYw" userLabel="Share">
+                                                <rect key="frame" x="0.0" y="0.0" width="163" height="54"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.80409888698630139" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                                <inset key="contentEdgeInsets" minX="10" minY="5" maxX="9" maxY="10"/>
+                                                <state key="normal" title="Show Off">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="share:" destination="cLS-SU-XmY" eventType="touchUpInside" id="Htl-wz-P3h"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBV-2P-FvQ">
+                                                <rect key="frame" x="0.0" y="64" width="163" height="54"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                                <inset key="contentEdgeInsets" minX="10" minY="5" maxX="9" maxY="10"/>
+                                                <state key="normal" title="⌂ Title">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="goToTitle:" destination="cLS-SU-XmY" eventType="touchUpInside" id="7CE-ti-yhq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>

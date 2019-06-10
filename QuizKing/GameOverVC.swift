@@ -31,5 +31,9 @@ class GameOverVC: UIViewController {
         coinLabel.text = String(coin)
         
     }
+    @IBAction func share(_ sender: UIButton) {
+        let activityVC = UIActivityViewController(activityItems: ["我在 Quiz King 中獲得了 " + String(score) + " 分，厲害吧！尼要不要也來玩玩看？", "https://quizking.com/"], applicationActivities: nil)
+        self.present(activityVC, animated: true, completion: nil)
+    }
     
 }

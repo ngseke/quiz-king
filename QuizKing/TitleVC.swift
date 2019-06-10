@@ -18,6 +18,11 @@ class TitleVC: UIViewController {
         self.performSegue(withIdentifier: "selectLevelSegue", sender: self) 
     }
     
+    // 按下About鍵
+    @IBAction func about(_ sender: UIButton) {
+    }
+    
+    
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         if(size.width < size.height){
             titleStack.axis = .vertical
