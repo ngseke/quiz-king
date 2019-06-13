@@ -14,8 +14,8 @@ class SelectLevelVC: UIViewController, UITableViewDataSource, UITableViewDelegat
         setView(label: coinLabel)
         if let savedCoins = UserDefaults.standard.object(forKey: "coins") as? Int {
             coins = savedCoins
-            coinLabel.text = String(coins)
         }
+        coinLabel.text = String(coins)
     }
     
     @IBAction func toTitle(_ sender: UIBarButtonItem) {

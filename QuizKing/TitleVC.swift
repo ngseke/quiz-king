@@ -31,5 +31,9 @@ class TitleVC: UIViewController {
             titleStack.axis = .horizontal
         }
     }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 }
 
