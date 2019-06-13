@@ -10,6 +10,78 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--AboutVC-->
+        <scene sceneID="jdq-3Q-359">
+            <objects>
+                <viewController id="U1T-n3-p0Y" customClass="AboutVC" customModule="QuizKing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aV9-5p-ZiF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ybT-gh-CvF">
+                                <rect key="frame" x="14.5" y="133.5" width="346.5" height="400"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz King" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Re0-dP-rxt">
+                                        <rect key="frame" x="98" y="0.0" width="150" height="153"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="VW0-2T-CgW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="64"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="這是一個益智問答的遊戲，你能賺多少錢呢？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ij-fV-rag">
+                                        <rect key="frame" x="0.0" y="179" width="346.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g65-Rt-mkJ">
+                                        <rect key="frame" x="161.5" y="225.5" width="23" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="104590029 黃省喬 104590042 莫鎮瑋" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJk-jh-ZRU">
+                                        <rect key="frame" x="100" y="274" width="146.5" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sKt-V3-qzw">
+                                        <rect key="frame" x="116.5" y="341" width="113" height="59"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vir-Kn-u7n">
+                                                <rect key="frame" x="0.0" y="0.0" width="113" height="59"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                                <state key="normal" title="Back">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="about:" destination="BYZ-38-t0r" eventType="touchUpInside" id="97J-r3-tVW"/>
+                                                    <action selector="back:" destination="U1T-n3-p0Y" eventType="touchUpInside" id="6Gx-wf-UBF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98159819841384888" green="0.99201983213424683" blue="0.0019783182069659233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ybT-gh-CvF" firstAttribute="centerX" secondItem="aV9-5p-ZiF" secondAttribute="centerX" id="Pc0-1s-wXr"/>
+                            <constraint firstItem="ybT-gh-CvF" firstAttribute="centerY" secondItem="aV9-5p-ZiF" secondAttribute="centerY" id="mG8-ON-59t"/>
+                            <constraint firstItem="ybT-gh-CvF" firstAttribute="height" secondItem="aV9-5p-ZiF" secondAttribute="height" multiplier="0.6" id="qgB-Q3-Hqg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XoA-Su-3fA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SDz-UQ-icW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1420" y="90"/>
+        </scene>
         <!--TitleVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -55,6 +127,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="about:" destination="BYZ-38-t0r" eventType="touchUpInside" id="365-OJ-5Fn"/>
+                                                    <segue destination="U1T-n3-p0Y" kind="presentation" id="ydf-Co-icO"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -62,7 +135,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.98159819841384888" green="0.99201983213424683" blue="0.0019783182069659233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.99215686274509807" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="hRA-ng-ehj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6Br-M0-a0b"/>
                             <constraint firstItem="hRA-ng-ehj" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.6" id="c17-2S-ZVe"/>
@@ -96,7 +169,7 @@
                                         <rect key="frame" x="6" y="0.0" width="343.5" height="296"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCz-AC-YjE" customClass="EdgeInsetLabel" customModule="QuizKing" customModuleProvider="target">
-                                                <rect key="frame" x="154.5" y="0.0" width="34.5" height="34"/>
+                                                <rect key="frame" x="144.5" y="0.0" width="54.5" height="34"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="dJ7-TH-i1H"/>
