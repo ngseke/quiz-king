@@ -286,18 +286,44 @@
                                     <constraint firstItem="v3u-bU-B15" firstAttribute="height" secondItem="hFJ-We-Iyt" secondAttribute="height" multiplier="0.5" id="oCr-o1-28j"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWj-Ir-Kwq">
+                                <rect key="frame" x="137.5" y="293.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="NUX-Qr-hva"/>
+                                    <constraint firstAttribute="width" constant="100" id="Sgn-FV-NDT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="100"/>
+                                <color key="textColor" red="0.0" green="0.66625642123287676" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dk-f0-Xm5">
+                                <rect key="frame" x="137.5" y="293.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="DzV-kh-xBs"/>
+                                    <constraint firstAttribute="height" constant="100" id="yas-sa-sd2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="100"/>
+                                <color key="textColor" red="0.95711582899093628" green="0.21212658286094666" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="2Dk-f0-Xm5" firstAttribute="centerY" secondItem="6sv-0I-Lbh" secondAttribute="centerY" id="0dV-2V-hqg"/>
                             <constraint firstAttribute="trailing" secondItem="hFJ-We-Iyt" secondAttribute="trailing" constant="10" id="Cvc-hD-k7g"/>
                             <constraint firstItem="hFJ-We-Iyt" firstAttribute="top" secondItem="6sv-0I-Lbh" secondAttribute="top" constant="25" id="Kr8-Uw-1p3"/>
+                            <constraint firstItem="FWj-Ir-Kwq" firstAttribute="centerY" secondItem="6sv-0I-Lbh" secondAttribute="centerY" id="RQn-mG-Z9u"/>
+                            <constraint firstItem="2Dk-f0-Xm5" firstAttribute="centerX" secondItem="6sv-0I-Lbh" secondAttribute="centerX" id="SiA-Gi-qLP"/>
                             <constraint firstItem="6sv-0I-Lbh" firstAttribute="bottom" secondItem="hFJ-We-Iyt" secondAttribute="bottom" constant="10" id="UKf-fm-dIF"/>
+                            <constraint firstItem="FWj-Ir-Kwq" firstAttribute="centerX" secondItem="6sv-0I-Lbh" secondAttribute="centerX" id="c0J-ej-H7j"/>
                             <constraint firstItem="hFJ-We-Iyt" firstAttribute="leading" secondItem="8EQ-pJ-8Zf" secondAttribute="leading" constant="10" id="iuz-tN-c5v"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6sv-0I-Lbh"/>
                     </view>
                     <connections>
                         <outlet property="categoryLabel" destination="PCz-AC-YjE" id="vIm-T7-RtJ"/>
+                        <outlet property="circle" destination="FWj-Ir-Kwq" id="pci-WE-in0"/>
+                        <outlet property="cross" destination="2Dk-f0-Xm5" id="sBq-Jg-kWh"/>
                         <outlet property="optionButton1" destination="g07-9m-R5t" id="IwC-r3-QTe"/>
                         <outlet property="optionButton2" destination="U1D-Mf-rQm" id="Dug-Bt-sTf"/>
                         <outlet property="optionButton3" destination="swL-me-2mc" id="B3W-d2-aIu"/>

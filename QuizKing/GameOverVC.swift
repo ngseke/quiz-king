@@ -29,7 +29,7 @@ class GameOverVC: UIViewController {
             coin = score
         }
         coinLabel.text = String(coin)
-        var coins = 100
+        var coins = 0
         if let savedCoins = UserDefaults.standard.object(forKey: "coins") as? Int {
             coins = savedCoins
         }

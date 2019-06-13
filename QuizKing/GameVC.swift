@@ -11,6 +11,8 @@ class GameVC: UIViewController {
     @IBOutlet weak var optionButton4: UIButton!
     @IBOutlet weak var secondsLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var circle: UILabel!
+    @IBOutlet weak var cross: UILabel!
     
     let defaultSeconds = 10     // 預設秒數
     
@@ -19,12 +21,14 @@ class GameVC: UIViewController {
     var questions = [Question]()
     var currentQuestionIndex: Int = 0
     var score = 0
-    var difficulty = "easy"
+    var difficulty = "easy" 
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         secondsLabel.layer.cornerRadius = secondsLabel.frame.width / 2
-        
+        circle.isHidden = true
+        cross.isHidden = true
         resetTimer()
         setView()
     }
@@ -44,11 +48,29 @@ class GameVC: UIViewController {
         }
     }
     
+    func showCircle () {
+        circle.isHidden = false
+        Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(hideCircle), userInfo: nil, repeats: false)
+    }
+    
+    func showCross () {
+        cross.isHidden = false
+        Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(hideCross), userInfo: nil, repeats: false)
+    }
+    
+    @objc func hideCircle () {
+        circle.isHidden = true
+    }
+    
+    @objc func hideCross () {
+        cross.isHidden = true
+    }
+    
     // 每過一秒
     @objc func timerTick () {
         seconds -= 1
         secondsLabel.text = String(seconds)
-        
+
         // 若時間到
         if (seconds < 0) {
             resetTimer()
@@ -76,9 +98,11 @@ class GameVC: UIViewController {
         if let text = selectionOfUser.titleLabel?.text {
             if (question.giveAnswer(answerOfUser: text)) {
                 // 答對
+                showCircle()
                 addScore()
             } else {
                 // 答錯
+                showCross()
             }
         }
         goToNextQuestion()

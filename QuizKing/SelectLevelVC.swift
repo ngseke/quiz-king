@@ -6,7 +6,7 @@ class SelectLevelVC: UIViewController, UITableViewDataSource, UITableViewDelegat
 
     @IBOutlet weak var coinLabel: UILabel!
     @IBOutlet weak var difficultTableView: UITableView!
-    var coins = 100
+    var coins = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
