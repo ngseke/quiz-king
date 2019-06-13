@@ -64,5 +64,9 @@ class LoadingVC: UIViewController {
             controller?.difficulty = difficulty
         }
     }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 }
 

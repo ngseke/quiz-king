@@ -149,4 +149,7 @@ class GameVC: UIViewController {
         controller?.score = score
         controller?.difficulty = difficulty
     }
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 }

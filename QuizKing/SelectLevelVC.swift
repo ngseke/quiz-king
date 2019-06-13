@@ -72,4 +72,8 @@ class SelectLevelVC: UIViewController, UITableViewDataSource, UITableViewDelegat
                 UserDefaults.standard.set(coins-moneyList[index!], forKey: "coins")
         }
     }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 }
