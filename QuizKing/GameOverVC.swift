@@ -29,7 +29,11 @@ class GameOverVC: UIViewController {
             coin = score
         }
         coinLabel.text = String(coin)
-        
+        var coins = 100
+        if let savedCoins = UserDefaults.standard.object(forKey: "coins") as? Int {
+            coins = savedCoins
+        }
+        UserDefaults.standard.set(coins + coin, forKey: "coins")
     }
     @IBAction func share(_ sender: UIButton) {
         let activityVC = UIActivityViewController(activityItems: ["我在 Quiz King 中獲得了 " + String(score) + " 分，厲害吧！尼要不要也來玩玩看？", "https://quizking.com/"], applicationActivities: nil)
