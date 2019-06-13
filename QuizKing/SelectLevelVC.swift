@@ -6,11 +6,16 @@ class SelectLevelVC: UIViewController, UITableViewDataSource, UITableViewDelegat
 
     @IBOutlet weak var coinLabel: UILabel!
     @IBOutlet weak var difficultTableView: UITableView!
+    var coins = 100
     
     override func viewDidLoad() {
         super.viewDidLoad()
         difficultTableView.dataSource = self
         setView(label: coinLabel)
+        if let savedCoins = UserDefaults.standard.object(forKey: "coins") as? Int {
+            coins = savedCoins
+            coinLabel.text = String(coins)
+        }
     }
     
     @IBAction func toTitle(_ sender: UIBarButtonItem) {
@@ -18,7 +23,7 @@ class SelectLevelVC: UIViewController, UITableViewDataSource, UITableViewDelegat
     }
     
     var difficultList = ["Easy", "Medium", "Hard"]
-    var moneyList = [0, 50, 100]
+    var moneyList = [0, 20, 50]
 //    var colorList = []
     
     // 設定某些元素樣式
@@ -52,6 +57,10 @@ class SelectLevelVC: UIViewController, UITableViewDataSource, UITableViewDelegat
         setView(label: cell.difficultLable!)
         setView(label: cell.moneyLable!)
         // 設定Cell的縮圖
+        if moneyList[indexPath.row] > coins {
+            cell.contentView.backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+            cell.isUserInteractionEnabled = false
+        }
         
         return cell
     }
@@ -60,6 +69,7 @@ class SelectLevelVC: UIViewController, UITableViewDataSource, UITableViewDelegat
         if segue.identifier == "goLoading" {
             let index = self.difficultTableView.indexPathForSelectedRow?.row
             (segue.destination as! LoadingVC).difficulty = difficultList[index!].lowercased()
+                UserDefaults.standard.set(coins-moneyList[index!], forKey: "coins")
         }
     }
 }
