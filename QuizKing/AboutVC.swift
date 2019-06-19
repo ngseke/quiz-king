@@ -11,4 +11,7 @@ class AboutVC: UIViewController {
         return true
     }
     
+    @IBAction func reset(_ sender: UIButton) {
+        UserDefaults.standard.set(94408, forKey: "coins")
+    }
 }
